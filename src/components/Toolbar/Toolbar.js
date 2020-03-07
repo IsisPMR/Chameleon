@@ -1,8 +1,9 @@
 import React from 'react';
 import './Toolbar.css';
+import NavChameleon from '../../img/chameleon.jpg';
 
 const Toolbar = props => (
-    <header className='toolbar'>
+    <header className='toolbar' style={{backgroundImage: NavChameleon}}>
         <nav className='toolbar__navigation'>
             <div></div>
             <div className='toolbar__logo'><a href='/'>Chameleon</a></div>
