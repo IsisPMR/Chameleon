@@ -22,30 +22,35 @@ class Gridcontainer extends React.Component {
       >
         <Grid container direction="row" justify="center" alignItems="center">
           <Grid onClick={ () => console.log("Ramiro")} item={true} xs={3}>
-            <img src={SF} alt="Self Defense" height="195" width="320" />
+            <div class="miniContainer">
+            <a href="/detail/8">
+              <img src={SF} alt="Self Defense" class="position" />
+            </a>
+              <div class="imageText"><p>Self Defense</p></div>
+            </div>
           </Grid>
-          <Grid item={true} xs={3}>
-            <img src={Pets} alt="Pets" height="195" width="320" />
+          <Grid item={true} xs={1} md={3} lg={3}>
+            <img src={Pets} alt="Pets" class="position" />
           </Grid>
-          <Grid item={true} xs={3}>
-            <img src={LS} alt="Life Style" height="195" width="320" />
+          <Grid item={true} xs={1} md={3}>
+            <img src={LS} alt="Life Style" class="position" />
           </Grid>
-          <Grid item={true} xs={3}>
-            <img src={Hacks}alt="Hacks"  height="195" width="320" />
+          <Grid item={true} xs={1} md={3}>
+            <img src={Hacks}alt="Hacks"  class="position" />
           </Grid>
         </Grid>
         <Grid container direction="row" justify="center" alignItems="center">
-          <Grid item={true} xs={3}>
-            <img src={LR} alt="Love and Relationships" height="195" width="320" />
+          <Grid item={true} xs={1} md={3}>
+            <img src={LR} alt="Love and Relationships" class="position" />
           </Grid>
-          <Grid item={true} xs={3}>
-            <img src={Healthy} alt="Healthy" height="195" width="320" />
+          <Grid item={true} xs={1} md={3}>
+            <img src={Healthy} alt="Healthy" class="position" />
           </Grid>
-          <Grid item={true} xs={3}>
-            <img src={Music}  alt="Music" height="195" width="320" />
+          <Grid item={true} xs={1} md={3}>
+            <img src={Music}  alt="Music" class="position" />
           </Grid>
-          <Grid item={true} xs={3}>
-            <img src={Excersice} alt="Excersice" height="195" width="320" />
+          <Grid item={true} xs={1} md={3}>
+            <img src={Excersice} alt="Excersice" class="position" />
           </Grid>
         </Grid>
       </Grid>

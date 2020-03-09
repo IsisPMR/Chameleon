@@ -1,3 +1,8 @@
+.position {
+    height: 100%;
+    width: 100%;
+}
+
 .imageContainer {
     background-color: rgb(14, 1, 11);
     height: 100vh;
@@ -5,3 +10,22 @@
     justify-content: center;
     align-items: center;
 }
+
+.miniContainer {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+.imageText {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: silver;
+    text-shadow: 1px 1px 2px black, 0 0 1em rgb(241, 206, 237), 0 0 0.2em rgb(241, 206, 237);
+    visibility: visible;
+    font-size: large;
+}
+.imageText:hover {
+    visibility: hidden;
+  }
