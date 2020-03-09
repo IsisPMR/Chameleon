@@ -1,4 +1,7 @@
 .imageContainer {
-    background-color: black;
+    background-color: rgb(14, 1, 11);
     height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

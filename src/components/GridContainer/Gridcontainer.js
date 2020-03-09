@@ -10,10 +10,10 @@ import Healthy from "../../img/Healthy.jpg";
 import Music from "../../img/Music.PNG";
 import Excersice from "../../img/Excersice.PNG";
 
-
 class Gridcontainer extends React.Component {
   render() {
-    return (<div > 
+    return (<div class="imageContainer"> 
+    
       <Grid
         container={true}
         direction="column"
@@ -22,30 +22,30 @@ class Gridcontainer extends React.Component {
       >
         <Grid container direction="row" justify="center" alignItems="center">
           <Grid onClick={ () => console.log("Ramiro")} item={true} xs={3}>
-            <img src={SF} alt='' height="195" width="320" />
+            <img src={SF} alt="Self Defense" height="195" width="320" />
           </Grid>
           <Grid item={true} xs={3}>
-            <img src={Pets} height="195" width="320" />
+            <img src={Pets} alt="Pets" height="195" width="320" />
           </Grid>
           <Grid item={true} xs={3}>
-            <img src={LS} height="195" width="320" />
+            <img src={LS} alt="Life Style" height="195" width="320" />
           </Grid>
           <Grid item={true} xs={3}>
-            <img src={Hacks} height="195" width="320" />
+            <img src={Hacks}alt="Hacks"  height="195" width="320" />
           </Grid>
         </Grid>
         <Grid container direction="row" justify="center" alignItems="center">
           <Grid item={true} xs={3}>
-            <img src={LR} height="195" width="320" />
+            <img src={LR} alt="Love and Relationships" height="195" width="320" />
           </Grid>
           <Grid item={true} xs={3}>
-            <img src={Healthy} height="195" width="320" />
+            <img src={Healthy} alt="Healthy" height="195" width="320" />
           </Grid>
           <Grid item={true} xs={3}>
-            <img src={Music} height="195" width="320" />
+            <img src={Music}  alt="Music" height="195" width="320" />
           </Grid>
           <Grid item={true} xs={3}>
-            <img src={Excersice} height="195" width="320" />
+            <img src={Excersice} alt="Excersice" height="195" width="320" />
           </Grid>
         </Grid>
       </Grid>
