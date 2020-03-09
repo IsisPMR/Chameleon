@@ -1,6 +1,6 @@
 .position {
-    height: 100%;
     width: 100%;
+    max-height: 200px;
 }
 
 .imageContainer {
@@ -23,9 +23,11 @@
     transform: translate(-50%, -50%);
     color: silver;
     text-shadow: 1px 1px 2px black, 0 0 1em rgb(241, 206, 237), 0 0 0.2em rgb(241, 206, 237);
-    visibility: visible;
+    opacity: 0%;
     font-size: large;
+    cursor: pointer;
 }
 .imageText:hover {
-    visibility: hidden;
+    opacity: 100%;
+    cursor: pointer;
   }
