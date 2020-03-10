@@ -51,12 +51,12 @@ class Gridcontainer extends React.Component {
         {
           id: "6",
           src: Excersice,
-          title: "Music"
+          title: "Excersice"
         },
         {
           id: "7",
           src: Music,
-          title: "Excersice"
+          title: "Music"
         }
        ]
     }

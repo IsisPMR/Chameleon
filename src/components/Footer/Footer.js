@@ -19,8 +19,8 @@ class Footer extends React.Component {
               <p>
                 {" "}
                 © 2020 Chameleon. ALl rigths Reserved - Powered by IM{" "}
-                <a href="https://www.linkedin.com/in/isis-mora-555739179/" target="_blank">
-                  <img src={linkedIn} />
+                <a href="https://www.linkedin.com/in/isis-mora-555739179/" target="_blank" rel="noopener noreferrer">
+                  <img src={linkedIn} alt="LinkedIn"/>
                 </a>
               </p>
             </div>
@@ -29,13 +29,13 @@ class Footer extends React.Component {
               <ul>
                 <li>
                   <a href="#!">
-                    <img src={twitter} />
+                    <img src={twitter} alt="Twitter" />
                   </a>
                   <a href="#!">
-                    <img src={instagram} />
+                    <img src={instagram} alt="Instagram" />
                   </a>
                   <a href="#!">
-                    <img src={fb} />
+                    <img src={fb} alt="Facebook" />
                   </a>
                 </li>
               </ul>
