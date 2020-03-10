@@ -1,12 +1,12 @@
 import React, { Component } from "react";
 import Form from "react-bootstrap/Form";
-import { BrowserRouter, Switch } from "react-router-dom";
+import './Details.css';
 
 class Details extends Component {
   render() {
     return (
       <div>
-        <Form>
+        <Form className="containerForm">
           <Form.Group controlId="exampleForm.ControlInput1">
             <Form.Label>Name</Form.Label>
             <Form.Control type="text" placeholder="Tutorial title" />
@@ -25,7 +25,7 @@ class Details extends Component {
             </Form.Control>
           </Form.Group>
           <Form.Group controlId="exampleForm.ControlTextarea1">
-            <Form.Label>Attache your video</Form.Label>
+            <Form.Label>Attach your video</Form.Label>
             <Form.Control as="textarea" rows="3" />
           </Form.Group>
         </Form>
