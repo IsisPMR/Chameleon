@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "426522cbd75f0e265992132a8441799f",
+    "revision": "a35775e86c37883395b4a87d14c36c33",
     "url": "/Chameleon/index.html"
   },
   {
-    "revision": "71b4de4c8b7f27a34583",
-    "url": "/Chameleon/static/css/main.e269faff.chunk.css"
+    "revision": "28356c3015a372a04cb9",
+    "url": "/Chameleon/static/css/main.a914dc8d.chunk.css"
   },
   {
-    "revision": "3e942eb5021cc77d3416",
-    "url": "/Chameleon/static/js/2.3c66ac53.chunk.js"
+    "revision": "0c5910b5df8ad9196b76",
+    "url": "/Chameleon/static/js/2.b9f86697.chunk.js"
   },
   {
-    "revision": "ac9fac6c8e755a8efecd01981adb88e6",
-    "url": "/Chameleon/static/js/2.3c66ac53.chunk.js.LICENSE.txt"
+    "revision": "c099810c3c102db7a44755001529c804",
+    "url": "/Chameleon/static/js/2.b9f86697.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "71b4de4c8b7f27a34583",
-    "url": "/Chameleon/static/js/main.3a3b1bd3.chunk.js"
+    "revision": "28356c3015a372a04cb9",
+    "url": "/Chameleon/static/js/main.0aa35123.chunk.js"
   },
   {
     "revision": "bd0d75c0aaaaf2e23cd5",
@@ -28,12 +28,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Chameleon/static/media/Excersice.84c84cba.PNG"
   },
   {
-    "revision": "2be0be92abffa113790a3255c87060a1",
-    "url": "/Chameleon/static/media/Hacks.2be0be92.PNG"
+    "revision": "8d55cb94760031a2962ffc988c3aed30",
+    "url": "/Chameleon/static/media/Health.8d55cb94.jpg"
   },
   {
-    "revision": "8d55cb94760031a2962ffc988c3aed30",
-    "url": "/Chameleon/static/media/Healthy.8d55cb94.jpg"
+    "revision": "2be0be92abffa113790a3255c87060a1",
+    "url": "/Chameleon/static/media/LifeHacks.2be0be92.PNG"
   },
   {
     "revision": "15dae0ea9b0d6a735d046bfcf4d69579",
@@ -56,7 +56,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Chameleon/static/media/SelfDefense.43859fab.PNG"
   },
   {
-    "revision": "8adc6098c40ee18c5cb5e3648892bd4e",
-    "url": "/Chameleon/static/media/chameleon.8adc6098.jpg"
+    "revision": "c80293ec137c6c52b7dc5fb985128fd9",
+    "url": "/Chameleon/static/media/chameleon.c80293ec.jpg"
   }
 ]);

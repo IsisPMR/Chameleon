@@ -1,31 +1,31 @@
 {
   "files": {
-    "main.css": "/Chameleon/static/css/main.e269faff.chunk.css",
-    "main.js": "/Chameleon/static/js/main.3a3b1bd3.chunk.js",
-    "main.js.map": "/Chameleon/static/js/main.3a3b1bd3.chunk.js.map",
+    "main.css": "/Chameleon/static/css/main.a914dc8d.chunk.css",
+    "main.js": "/Chameleon/static/js/main.0aa35123.chunk.js",
+    "main.js.map": "/Chameleon/static/js/main.0aa35123.chunk.js.map",
     "runtime-main.js": "/Chameleon/static/js/runtime-main.0c7229b2.js",
     "runtime-main.js.map": "/Chameleon/static/js/runtime-main.0c7229b2.js.map",
-    "static/js/2.3c66ac53.chunk.js": "/Chameleon/static/js/2.3c66ac53.chunk.js",
-    "static/js/2.3c66ac53.chunk.js.map": "/Chameleon/static/js/2.3c66ac53.chunk.js.map",
+    "static/js/2.b9f86697.chunk.js": "/Chameleon/static/js/2.b9f86697.chunk.js",
+    "static/js/2.b9f86697.chunk.js.map": "/Chameleon/static/js/2.b9f86697.chunk.js.map",
     "index.html": "/Chameleon/index.html",
-    "precache-manifest.ae0b04b355b5ed3be53f29b281cdb4b6.js": "/Chameleon/precache-manifest.ae0b04b355b5ed3be53f29b281cdb4b6.js",
+    "precache-manifest.721135abaad3150fd73522cf326f893c.js": "/Chameleon/precache-manifest.721135abaad3150fd73522cf326f893c.js",
     "service-worker.js": "/Chameleon/service-worker.js",
-    "static/css/main.e269faff.chunk.css.map": "/Chameleon/static/css/main.e269faff.chunk.css.map",
-    "static/js/2.3c66ac53.chunk.js.LICENSE.txt": "/Chameleon/static/js/2.3c66ac53.chunk.js.LICENSE.txt",
+    "static/css/main.a914dc8d.chunk.css.map": "/Chameleon/static/css/main.a914dc8d.chunk.css.map",
+    "static/js/2.b9f86697.chunk.js.LICENSE.txt": "/Chameleon/static/js/2.b9f86697.chunk.js.LICENSE.txt",
     "static/media/Excersice.PNG": "/Chameleon/static/media/Excersice.84c84cba.PNG",
-    "static/media/Hacks.PNG": "/Chameleon/static/media/Hacks.2be0be92.PNG",
-    "static/media/Healthy.jpg": "/Chameleon/static/media/Healthy.8d55cb94.jpg",
+    "static/media/Health.jpg": "/Chameleon/static/media/Health.8d55cb94.jpg",
+    "static/media/LifeHacks.PNG": "/Chameleon/static/media/LifeHacks.2be0be92.PNG",
     "static/media/LifeStyle.PNG": "/Chameleon/static/media/LifeStyle.15dae0ea.PNG",
     "static/media/LoveAndRelationships.PNG": "/Chameleon/static/media/LoveAndRelationships.0ac0cfd3.PNG",
     "static/media/Music.PNG": "/Chameleon/static/media/Music.7ecf0346.PNG",
     "static/media/Pets.PNG": "/Chameleon/static/media/Pets.955f8250.PNG",
     "static/media/SelfDefense.PNG": "/Chameleon/static/media/SelfDefense.43859fab.PNG",
-    "static/media/Toolbar.css": "/Chameleon/static/media/chameleon.8adc6098.jpg"
+    "static/media/Toolbar.css": "/Chameleon/static/media/chameleon.c80293ec.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.0c7229b2.js",
-    "static/js/2.3c66ac53.chunk.js",
-    "static/css/main.e269faff.chunk.css",
-    "static/js/main.3a3b1bd3.chunk.js"
+    "static/js/2.b9f86697.chunk.js",
+    "static/css/main.a914dc8d.chunk.css",
+    "static/js/main.0aa35123.chunk.js"
   ]
 }
