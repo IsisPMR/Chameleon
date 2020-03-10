@@ -13,8 +13,8 @@ class App extends Component {
         <BrowserRouter>
         <Toolbar />
           <Switch>
-              <Route exact path="/" component={Gridcontainer} />
               <Route path="/detail/:id" component={Details} />
+              <Route exact path="/Chameleon" component={Gridcontainer} />
           </Switch>
         </BrowserRouter>
         <Footer />

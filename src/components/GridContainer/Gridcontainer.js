@@ -97,7 +97,6 @@ class Gridcontainer extends React.Component {
                 )
               })
             }
-
           </Grid>
         </Grid>
       </div>
