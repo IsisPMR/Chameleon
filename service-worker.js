@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/Chameleon/precache-manifest.721135abaad3150fd73522cf326f893c.js"
+  "/Chameleon/precache-manifest.dc754144584e8cc2f26f4b7a5dc80f2b.js"
 );
 
 self.addEventListener('message', (event) => {
