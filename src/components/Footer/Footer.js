@@ -14,7 +14,7 @@ class Footer extends React.Component {
             <div class="col l6 s12">
               <h5>Chameleon</h5>
               <p>
-                The love of sharing, love, crafts, diy, exercises and recipes!
+                The love of sharing, love, crafts, DIY, exercises and recipes!
               </p>
               <p>
                 {" "}
