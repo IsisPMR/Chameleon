@@ -4,6 +4,7 @@ import Gridcontainer from "./components/GridContainer/Gridcontainer";
 import Details from "./components/Details/Details";
 import Footer from "./components/Footer/Footer";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
+import PrincipalLog from "./components/Login/PrincipalLog";
 
 class App extends Component {
   render() {
@@ -13,8 +14,9 @@ class App extends Component {
         <BrowserRouter>
         <Toolbar />
           <Switch>
-              <Route path="/detail/:id" component={Details} />
-              <Route exact path="/Chameleon" component={Gridcontainer} />
+              <Route path="/detail/:id" component={ Details } />
+              <Route exact path="/Chameleon" component={ Gridcontainer } />
+              <Route path="/admin" component={ PrincipalLog } />
           </Switch>
         </BrowserRouter>
         <Footer />
