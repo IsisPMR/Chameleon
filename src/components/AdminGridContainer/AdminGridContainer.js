@@ -1,5 +1,5 @@
-import "./Gridcontainer.css";
 import React from "react";
+import "./AdminGridContainer.css";
 import Grid from "@material-ui/core/Grid";
 import SF from "../../img/SelfDefense.PNG";
 import Pets from "../../img/Pets.PNG";
@@ -11,7 +11,7 @@ import Music from "../../img/Music.PNG";
 import Excersice from "../../img/Excersice.PNG";
 import { Link } from "react-router-dom";
 
-class Gridcontainer extends React.Component {
+class AdminGridContainer extends React.Component {
 
   constructor(props) {
     super(props)
@@ -63,12 +63,11 @@ class Gridcontainer extends React.Component {
   }
   
   render() {
-
     const { items } = this.state;
 
     return (
-      
-      <div class="imageContainer">
+      <div class="aimageContainer">
+          <h1>This is admin content provider</h1>
         <Grid
           container={true}
           direction="column"
@@ -85,11 +84,11 @@ class Gridcontainer extends React.Component {
               items.map(item => {
                 return (
                   <Grid item={true} xs={3}>
-                    <div class="miniContainer">
-                      <Link to={"/category/" + item.id}>
-                        <img src={item.src} alt={item.title} class="position" />
+                    <div class="aminiContainer">
+                      <Link to={"/adminadd/" + item.id}>
+                        <img src={item.src} alt={item.title} class="aposition" />
                       </Link>
-                      <div class="imageText">
+                      <div class="aimageText">
                         <p>{item.title}</p>
                       </div>
                     </div>
@@ -104,4 +103,4 @@ class Gridcontainer extends React.Component {
   }
 }
 
-export default Gridcontainer;
+export default AdminGridContainer;

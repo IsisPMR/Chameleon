@@ -1,0 +1,33 @@
+.aposition {
+    width: 100%;
+    max-height: 200px;
+}
+
+.aimageContainer {
+    background-color: greenyellow;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.aminiContainer {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+.aimageText {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: silver;
+    text-shadow: 1px 1px 2px black, 0 0 1em rgb(241, 206, 237), 0 0 0.2em rgb(241, 206, 237);
+    opacity: 0%;
+    font-size: large;
+    cursor: pointer;
+}
+.aimageText:hover {
+    opacity: 100%;
+    cursor: pointer;
+  }

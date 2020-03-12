@@ -22,7 +22,7 @@ const Login = () => {
 
     <button onClick={() => {if(username === userInput && password === passwordInput){
                             console.log("LogIn Successfull");
-                            reDirection.push("/Chameleon")
+                            reDirection.push("/fillcategory")
                             }else{
                                console.log("LogIn failed");
     }}}>Log in</button>
