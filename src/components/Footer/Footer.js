@@ -8,10 +8,10 @@ import twitter from "../../img/icons/twitter.png";
 class Footer extends React.Component {
   render() {
     return (
-      <div class="footerStyle">
-        <div class="container">
-          <div class="row">
-            <div class="col l6 s12">
+      <div className="footerStyle">
+        <div className="container">
+          <div className="row">
+            <div className="col l6 s12">
               <h5>Chameleon</h5>
               <p>
                 The love of sharing, love, crafts, DIY, exercises and recipes!
@@ -24,7 +24,7 @@ class Footer extends React.Component {
                 </a>
               </p>
             </div>
-            <div class="col l4 offset-l2 s12">
+            <div className="col l4 offset-l2 s12">
               <h5>Follow us on:</h5>
               <ul>
                 <li>
