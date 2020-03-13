@@ -11,11 +11,11 @@ const Toolbar = props => (
             <div className='toolbar__logo chameleonIcon' ><Link to='/Chameleon'>Chameleon&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</Link><Link to='/Chameleon'><img src={CIcon} alt="Chameleon Icon" /></Link></div>
             <div className='spacer' />
             <div className='toolbar__navigation__items'>
-            {/*
+            
                 <ul>
-                    <li><a href='../AboutMe/Aboutme'>About me</a></li>
-                </ul> */
-            }
+                    <li><Link to='/admin'>.</Link></li>
+                </ul> 
+            
             </div>
         </nav>
     </header>
