@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/Chameleon/static/css/main.b068ea11.chunk.css",
-    "main.js": "/Chameleon/static/js/main.166dc3ad.chunk.js",
-    "main.js.map": "/Chameleon/static/js/main.166dc3ad.chunk.js.map",
+    "main.js": "/Chameleon/static/js/main.d02821b5.chunk.js",
+    "main.js.map": "/Chameleon/static/js/main.d02821b5.chunk.js.map",
     "runtime-main.js": "/Chameleon/static/js/runtime-main.0c7229b2.js",
     "runtime-main.js.map": "/Chameleon/static/js/runtime-main.0c7229b2.js.map",
     "static/js/2.e84b7d27.chunk.js": "/Chameleon/static/js/2.e84b7d27.chunk.js",
     "static/js/2.e84b7d27.chunk.js.map": "/Chameleon/static/js/2.e84b7d27.chunk.js.map",
     "index.html": "/Chameleon/index.html",
-    "precache-manifest.3e47fcddd866fb87da4c648beeecdc5a.js": "/Chameleon/precache-manifest.3e47fcddd866fb87da4c648beeecdc5a.js",
+    "precache-manifest.475b2ab17d2b26630705e34be454963a.js": "/Chameleon/precache-manifest.475b2ab17d2b26630705e34be454963a.js",
     "service-worker.js": "/Chameleon/service-worker.js",
     "static/css/main.b068ea11.chunk.css.map": "/Chameleon/static/css/main.b068ea11.chunk.css.map",
     "static/js/2.e84b7d27.chunk.js.LICENSE.txt": "/Chameleon/static/js/2.e84b7d27.chunk.js.LICENSE.txt",
@@ -26,6 +26,6 @@
     "static/js/runtime-main.0c7229b2.js",
     "static/js/2.e84b7d27.chunk.js",
     "static/css/main.b068ea11.chunk.css",
-    "static/js/main.166dc3ad.chunk.js"
+    "static/js/main.d02821b5.chunk.js"
   ]
 }
