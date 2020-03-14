@@ -5,6 +5,7 @@
   "homepage": "https://isispmr.github.io/Chameleon",
   "dependencies": {
     "@material-ui/core": "^4.9.5",
+    "@material-ui/lab": "^4.0.0-alpha.45",
     "@material-ui/system": "^4.9.3",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",

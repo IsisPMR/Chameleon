@@ -19,7 +19,7 @@ class App extends Component {
               <Route path="/category/:id" component={ BlogCategory } />
               <Route path="/admin" component={ PrincipalLog } />
               <Route path="/fillcategory" component={ AdminGridContainer } />
-              <Route path="/adminadd/:id" component={ Details } />
+              <Route path="/adminadd/:id" component={ Details } /> 
               <Route exact path="/Chameleon" component={ Gridcontainer } />
           </Switch>
         </BrowserRouter>
