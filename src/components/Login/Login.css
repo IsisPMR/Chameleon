@@ -1,0 +1,15 @@
+.formTitle {
+    text-align: center;
+    padding-top: 25px;
+    font-size: larger;
+    padding-bottom: 10px;
+}
+
+.loginForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 28px;
+    vertical-align: 50px;
+    height: vh;
+}

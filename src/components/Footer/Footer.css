@@ -1,9 +1,9 @@
 .footerStyle {
     background-color: #000115;
     color: whitesmoke;
-    /* position: fixed; */
     bottom: 0;
     width: 100%;
     padding-top: 0%;
     padding-bottom: 0%;
+    position: fixed;
 }

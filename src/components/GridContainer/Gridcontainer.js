@@ -4,10 +4,10 @@ import Grid from "@material-ui/core/Grid";
 import SF from "../../img/SelfDefense.PNG";
 import Pets from "../../img/Pets.PNG";
 import LS from "../../img/LifeStyle.PNG";
-import LR from "../../img/LoveAndRelationships.PNG";
+import LR from "../../img/Love.PNG";
 import LH from "../../img/LifeHacks.PNG";
 import Health from "../../img/Health.jpg";
-import Music from "../../img/Music.PNG";
+import Music from "../../img/Travels.PNG";
 import Excersice from "../../img/Excersice.PNG";
 import { Link } from "react-router-dom";
 
@@ -56,7 +56,7 @@ class Gridcontainer extends React.Component {
         {
           id: "7",
           src: Music,
-          title: "Music"
+          title: "Travels"
         }
        ]
     }

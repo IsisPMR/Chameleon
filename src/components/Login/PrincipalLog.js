@@ -7,7 +7,6 @@ class PrincipalLog extends Component {
 render() {
   return (
     <Fragment>
-      <div>LOGIN</div>
       <GlobalContextProvider settings={{ username: "chameleon", password: "chameleon123" }}>
         <Login />
       </GlobalContextProvider>

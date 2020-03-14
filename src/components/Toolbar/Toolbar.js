@@ -1,6 +1,5 @@
 import React from 'react';
 import './Toolbar.css';
-/* import NavChameleon from '../../img/bar/chameleon.jpg'; */
 import CIcon from '../../img/icons/cIcon.png';
 import { Link } from "react-router-dom";
 
