@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "3063efb4c5abae7d1b6c512a0558125f",
+    "revision": "83c87ca0f999864d6dedc7812bb91489",
     "url": "/Chameleon/index.html"
   },
   {
-    "revision": "4d8de6b76739f9a5cefe",
-    "url": "/Chameleon/static/css/main.b068ea11.chunk.css"
+    "revision": "ffdc9ec722e809f987e9",
+    "url": "/Chameleon/static/css/main.91832d0e.chunk.css"
   },
   {
-    "revision": "6ac6a97bdf0b27539401",
-    "url": "/Chameleon/static/js/2.e84b7d27.chunk.js"
+    "revision": "b3e6420a6b0e1c9fa390",
+    "url": "/Chameleon/static/js/2.076c95a1.chunk.js"
   },
   {
     "revision": "ac9fac6c8e755a8efecd01981adb88e6",
-    "url": "/Chameleon/static/js/2.e84b7d27.chunk.js.LICENSE.txt"
+    "url": "/Chameleon/static/js/2.076c95a1.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "4d8de6b76739f9a5cefe",
-    "url": "/Chameleon/static/js/main.d02821b5.chunk.js"
+    "revision": "ffdc9ec722e809f987e9",
+    "url": "/Chameleon/static/js/main.accca348.chunk.js"
   },
   {
     "revision": "bd0d75c0aaaaf2e23cd5",
@@ -40,6 +40,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Chameleon/static/media/LifeStyle.15dae0ea.PNG"
   },
   {
+    "revision": "3b70322153fd569c8e0cfd76cc49ca20",
+    "url": "/Chameleon/static/media/Love.3b703221.PNG"
+  },
+  {
     "revision": "0ac0cfd3b4cd4d6e9957b70ea228ac28",
     "url": "/Chameleon/static/media/LoveAndRelationships.0ac0cfd3.PNG"
   },
@@ -54,6 +58,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "43859fab044373d8150999cb8d216c12",
     "url": "/Chameleon/static/media/SelfDefense.43859fab.PNG"
+  },
+  {
+    "revision": "905ca59d772fdb749b0b5659c2eae2cb",
+    "url": "/Chameleon/static/media/Travels.905ca59d.PNG"
   },
   {
     "revision": "c80293ec137c6c52b7dc5fb985128fd9",
