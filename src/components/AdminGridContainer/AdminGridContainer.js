@@ -7,23 +7,22 @@ import LS from "../../img/LifeStyle.PNG";
 import LR from "../../img/LoveAndRelationships.PNG";
 import LH from "../../img/LifeHacks.PNG";
 import Health from "../../img/Health.jpg";
-import Music from "../../img/Music.PNG";
+import Travels from "../../img/Travels.PNG";
 import Excersice from "../../img/Excersice.PNG";
 import { Link } from "react-router-dom";
 
 class AdminGridContainer extends React.Component {
-
   constructor(props) {
-    super(props)
-  
+    super(props);
+
     this.state = {
-       items: [
-         {
-           id: "0",
-           src: SF,
-           title: "Self Defense"
-         },
-         {
+      items: [
+        {
+          id: "0",
+          src: SF,
+          title: "Self Defense"
+        },
+        {
           id: "1",
           src: Pets,
           title: "Pets"
@@ -55,49 +54,53 @@ class AdminGridContainer extends React.Component {
         },
         {
           id: "7",
-          src: Music,
-          title: "Music"
+          src: Travels,
+          title: "Travel"
         }
-       ]
-    }
+      ]
+    };
   }
-  
+
   render() {
     const { items } = this.state;
 
     return (
       <div class="aimageContainer">
-          <h1>This is admin content provider</h1>
-        <Grid
-          container={true}
-          direction="column"
-          justify="center"
-          alignItems="center"
-        >
+        <h1>Welcome! <br/> You can add more content here:</h1>
+        <div class="categoryImages">
           <Grid
-            container
-            direction="row"
+            container={true}
+            direction="column"
             justify="center"
             alignItems="center"
           >
-            {
-              items.map(item => {
+            <Grid
+              container
+              direction="row"
+              justify="center"
+              alignItems="center"
+            >
+              {items.map(item => {
                 return (
                   <Grid item={true} xs={3}>
                     <div class="aminiContainer">
-                      <Link to={"/adminadd/" + item.id}>
-                        <img src={item.src} alt={item.title} class="aposition" />
+                      <Link className="images" to={"/adminadd/" + item.id}>
+                        <img
+                          src={item.src}
+                          alt={item.title}
+                          class="aposition"
+                        />
                       </Link>
                       <div class="aimageText">
                         <p>{item.title}</p>
                       </div>
                     </div>
                   </Grid>
-                )
-              })
-            }
+                );
+              })}
+            </Grid>
           </Grid>
-        </Grid>
+        </div>
       </div>
     );
   }

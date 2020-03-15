@@ -5,7 +5,7 @@
 }
 
 .imageContainer {
-    background-color:rgb(92, 63, 92);
+    background-color:rgba(14, 4, 14, 0.829);
     /*height: 100vh;*/
     display: flex;
     justify-content: center;

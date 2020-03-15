@@ -1,0 +1,11 @@
+.allVideosContainer {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 9%;
+    align-items: center;
+    padding-top: 2%;
+}
+
+.miniVideos {
+    align-items: center;
+}

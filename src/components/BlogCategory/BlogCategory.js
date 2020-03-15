@@ -4,6 +4,7 @@ import Box from "@material-ui/core/Box";
 import Typography from "@material-ui/core/Typography";
 import Skeleton from "@material-ui/lab/Skeleton";
 import ReactPlayer from "react-player";
+import "./BlogCategory.css";
 
 const data = [
   {
@@ -54,14 +55,12 @@ function BlogCategory(props) {
   const { loading = false } = props;
 
   return (
-    <div>
+    <div className="allVideosContainer">
       <div>
         <ReactPlayer
-          url="https://www.youtube.com/watch?v=s2pp_ZAk6Uw"
+          url="https://www.youtube.com/watch?v=pndPbpHLpos&t=3s"
           className="react-player"
           playing
-          width="100%"
-          height="100%"
         />
       </div>
       <Grid container>
