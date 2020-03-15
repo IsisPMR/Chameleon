@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "83c87ca0f999864d6dedc7812bb91489",
+    "revision": "59371cd673e912954dd164fbe67fd433",
     "url": "/Chameleon/index.html"
   },
   {
-    "revision": "ffdc9ec722e809f987e9",
-    "url": "/Chameleon/static/css/main.91832d0e.chunk.css"
+    "revision": "9299f975e0d96893ee08",
+    "url": "/Chameleon/static/css/main.4e0a294a.chunk.css"
   },
   {
-    "revision": "b3e6420a6b0e1c9fa390",
-    "url": "/Chameleon/static/js/2.076c95a1.chunk.js"
+    "revision": "9209d812d391f35e954e",
+    "url": "/Chameleon/static/js/2.65b3500c.chunk.js"
   },
   {
     "revision": "ac9fac6c8e755a8efecd01981adb88e6",
-    "url": "/Chameleon/static/js/2.076c95a1.chunk.js.LICENSE.txt"
+    "url": "/Chameleon/static/js/2.65b3500c.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "ffdc9ec722e809f987e9",
-    "url": "/Chameleon/static/js/main.accca348.chunk.js"
+    "revision": "9299f975e0d96893ee08",
+    "url": "/Chameleon/static/js/main.73071288.chunk.js"
   },
   {
     "revision": "bd0d75c0aaaaf2e23cd5",
@@ -46,10 +46,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "0ac0cfd3b4cd4d6e9957b70ea228ac28",
     "url": "/Chameleon/static/media/LoveAndRelationships.0ac0cfd3.PNG"
-  },
-  {
-    "revision": "7ecf0346e31de9032788dd1c0ee55d80",
-    "url": "/Chameleon/static/media/Music.7ecf0346.PNG"
   },
   {
     "revision": "955f8250c74738482f9fc0f28544cf5d",
