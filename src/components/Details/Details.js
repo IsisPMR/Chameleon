@@ -8,7 +8,7 @@ import Button from '@material-ui/core/Button';
 class Details extends Component {
   render() {
     return (
-      <div className="containerForm">
+      <div className="adminContainerForm">
         <h2>Upload a new tutorial</h2>
         <TextField
           required
@@ -33,8 +33,12 @@ class Details extends Component {
         </Select>
         <br />
         <br />
-        <p>Upload file</p>
-        <input ref="upload" type="file" />
+        <p>Copy your URL here:</p>
+        <TextField
+          required
+          id="standard-required"
+          label="URL"
+        />
         <br />
         <br />
         <Button>Sumbit</Button>
