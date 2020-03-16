@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/Chameleon/static/css/main.4e0a294a.chunk.css",
-    "main.js": "/Chameleon/static/js/main.73071288.chunk.js",
-    "main.js.map": "/Chameleon/static/js/main.73071288.chunk.js.map",
+    "main.css": "/Chameleon/static/css/main.353bceb0.chunk.css",
+    "main.js": "/Chameleon/static/js/main.0e4b0198.chunk.js",
+    "main.js.map": "/Chameleon/static/js/main.0e4b0198.chunk.js.map",
     "runtime-main.js": "/Chameleon/static/js/runtime-main.0c7229b2.js",
     "runtime-main.js.map": "/Chameleon/static/js/runtime-main.0c7229b2.js.map",
     "static/js/2.65b3500c.chunk.js": "/Chameleon/static/js/2.65b3500c.chunk.js",
     "static/js/2.65b3500c.chunk.js.map": "/Chameleon/static/js/2.65b3500c.chunk.js.map",
     "index.html": "/Chameleon/index.html",
-    "precache-manifest.54b58695053e9bef84c0fc5bb53e0341.js": "/Chameleon/precache-manifest.54b58695053e9bef84c0fc5bb53e0341.js",
+    "precache-manifest.65dd3a35fc90e00265aaec95033ee02c.js": "/Chameleon/precache-manifest.65dd3a35fc90e00265aaec95033ee02c.js",
     "service-worker.js": "/Chameleon/service-worker.js",
-    "static/css/main.4e0a294a.chunk.css.map": "/Chameleon/static/css/main.4e0a294a.chunk.css.map",
+    "static/css/main.353bceb0.chunk.css.map": "/Chameleon/static/css/main.353bceb0.chunk.css.map",
     "static/js/2.65b3500c.chunk.js.LICENSE.txt": "/Chameleon/static/js/2.65b3500c.chunk.js.LICENSE.txt",
     "static/media/Excersice.PNG": "/Chameleon/static/media/Excersice.84c84cba.PNG",
     "static/media/Health.jpg": "/Chameleon/static/media/Health.8d55cb94.jpg",
@@ -26,7 +26,7 @@
   "entrypoints": [
     "static/js/runtime-main.0c7229b2.js",
     "static/js/2.65b3500c.chunk.js",
-    "static/css/main.4e0a294a.chunk.css",
-    "static/js/main.73071288.chunk.js"
+    "static/css/main.353bceb0.chunk.css",
+    "static/js/main.0e4b0198.chunk.js"
   ]
 }

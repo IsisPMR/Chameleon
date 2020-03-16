@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "59371cd673e912954dd164fbe67fd433",
+    "revision": "f23cbfe55042a3b40f6fa9b93178e46b",
     "url": "/Chameleon/index.html"
   },
   {
-    "revision": "9299f975e0d96893ee08",
-    "url": "/Chameleon/static/css/main.4e0a294a.chunk.css"
+    "revision": "0b975137ade9472c6a7e",
+    "url": "/Chameleon/static/css/main.353bceb0.chunk.css"
   },
   {
     "revision": "9209d812d391f35e954e",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Chameleon/static/js/2.65b3500c.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "9299f975e0d96893ee08",
-    "url": "/Chameleon/static/js/main.73071288.chunk.js"
+    "revision": "0b975137ade9472c6a7e",
+    "url": "/Chameleon/static/js/main.0e4b0198.chunk.js"
   },
   {
     "revision": "bd0d75c0aaaaf2e23cd5",
