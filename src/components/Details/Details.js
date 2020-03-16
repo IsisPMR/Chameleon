@@ -18,6 +18,8 @@ class Details extends Component {
         />
         <br />
         <br />
+        <h7>Select a category</h7>
+        <br />
         <Select className="fieldwith">
           <MenuItem value="">
             <em>None</em>
@@ -39,7 +41,7 @@ class Details extends Component {
           id="standard-required"
           label="URL"
         />
-        <br />
+        <Button>Validate</Button>
         <br />
         <Button>Sumbit</Button>
       </div>
