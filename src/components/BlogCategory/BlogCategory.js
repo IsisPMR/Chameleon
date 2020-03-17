@@ -53,12 +53,13 @@ const data = [
 ];
 function BlogCategory(props) {
   const { loading = false } = props;
+  let urlContent = '';
 
   return (
     <div className="allVideosContainer">
       <div>
         <ReactPlayer
-          url="https://www.youtube.com/watch?v=pndPbpHLpos&t=3s"
+          url= {urlContent}
           className="react-player"
           playing
         />

@@ -4,6 +4,7 @@ import Select from "@material-ui/core/Select";
 import MenuItem from "@material-ui/core/MenuItem";
 import "./Details.css";
 import Button from '@material-ui/core/Button';
+/* import Query from "./Query"; */
 
 class Details extends Component {
   render() {
@@ -41,7 +42,7 @@ class Details extends Component {
           id="standard-required"
           label="URL"
         />
-        <Button>Validate</Button>
+        <Button /* onClick={Query} */>Validate</Button>
         <br />
         <Button>Sumbit</Button>
       </div>
