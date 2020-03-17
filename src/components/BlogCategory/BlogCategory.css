@@ -9,3 +9,12 @@
 .miniVideos {
     align-items: center;
 }
+
+.detailItems {
+    padding: 0 20px;
+}
+
+.MuiGrid-container {
+    margin-bottom: 40px;
+    margin-top: 20px;
+}

@@ -1,15 +1,8 @@
 import "./Gridcontainer.css";
 import React from "react";
 import Grid from "@material-ui/core/Grid";
-import SF from "../../img/SelfDefense.PNG";
-import Pets from "../../img/Pets.PNG";
-import LS from "../../img/LifeStyle.PNG";
-import LR from "../../img/Love.PNG";
-import LH from "../../img/LifeHacks.PNG";
-import Health from "../../img/Health.jpg";
-import Music from "../../img/Travels.PNG";
-import Excersice from "../../img/Excersice.PNG";
 import { Link } from "react-router-dom";
+import data from "../../data.json"
 
 class Gridcontainer extends React.Component {
 
@@ -17,49 +10,12 @@ class Gridcontainer extends React.Component {
     super(props)
   
     this.state = {
-       items: [
-         {
-           id: "0",
-           src: SF,
-           title: "Self Defense"
-         },
-         {
-          id: "1",
-          src: Pets,
-          title: "Pets"
-        },
-        {
-          id: "2",
-          src: LS,
-          title: "Life style"
-        },
-        {
-          id: "3",
-          src: LR,
-          title: "Love and Relationships"
-        },
-        {
-          id: "4",
-          src: LH,
-          title: "Life Hacks"
-        },
-        {
-          id: "5",
-          src: Health,
-          title: "Health"
-        },
-        {
-          id: "6",
-          src: Excersice,
-          title: "Excersice"
-        },
-        {
-          id: "7",
-          src: Music,
-          title: "Travels"
-        }
-       ]
+       items: []
     }
+  }
+
+  componentDidMount() {
+    this.setState({ items: data.categories })
   }
   
   render() {
@@ -87,7 +43,7 @@ class Gridcontainer extends React.Component {
                   <Grid item={true} xs={3}>
                     <div class="miniContainer">
                       <Link to={"/category/" + item.id}>
-                        <img src={item.src} alt={item.title} class="position" />
+                        <img src={require(`../../img/${item.src}`)} alt={item.title} class="position" />
                       </Link>
                       <div class="imageText">
                         <p>{item.title}</p>
