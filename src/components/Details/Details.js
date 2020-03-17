@@ -7,6 +7,17 @@ import Button from '@material-ui/core/Button';
 /* import Query from "./Query"; */
 
 class Details extends Component {
+
+  constructor(props) {
+    super(props)
+  
+    this.state = {
+       name: "",
+       category: "",
+       link: ""
+    }
+  }
+
   render() {
     return (
       <div className="adminContainerForm">

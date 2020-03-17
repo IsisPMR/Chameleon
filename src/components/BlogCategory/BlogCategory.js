@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import data from "../../data.json";
 import Grid from "@material-ui/core/Grid";
-import Box from "@material-ui/core/Box";
-import Typography from "@material-ui/core/Typography";
+/* import Box from "@material-ui/core/Box";
+import Typography from "@material-ui/core/Typography"; */
 import ReactPlayer from "react-player";
 import "./BlogCategory.css";
 
