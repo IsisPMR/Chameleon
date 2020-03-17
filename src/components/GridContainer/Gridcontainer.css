@@ -1,12 +1,10 @@
 .position {
     width: 100%;
     max-height: 200px;
-/*     position: fixed;  */
 }
 
 .imageContainer {
     background-color:rgba(14, 4, 14, 0.829);
-    /*height: 100vh;*/
     display: flex;
     justify-content: center;
     align-items: center;

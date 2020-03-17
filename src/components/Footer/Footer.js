@@ -31,10 +31,10 @@ class Footer extends React.Component {
                   <a href="#!">
                     <img src={twitter} alt="Twitter" />
                   </a>
-                  <a href="#!">
+                  <a href="https://www.instagram.com/aaronmadrigalfotografo/" target="_blank" rel="noopener noreferrer">
                     <img src={instagram} alt="Instagram" />
                   </a>
-                  <a href="#!">
+                  <a href="https://www.facebook.com/pg/madorfotografia/photos/?ref=page_internal" target="_blank" rel="noopener noreferrer">
                     <img src={fb} alt="Facebook" />
                   </a>
                 </li>

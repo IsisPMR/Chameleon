@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import data from "../../data.json";
 import Grid from "@material-ui/core/Grid";
-/* import Box from "@material-ui/core/Box";
-import Typography from "@material-ui/core/Typography"; */
 import ReactPlayer from "react-player";
 import "./BlogCategory.css";
 
@@ -49,6 +47,9 @@ export default class BlogCategory extends Component {
                 <Grid  key={index} xs className="detailItems">
                   <img onClick={() => this.changeImage(l.mp4)} style={{ width: 210, height: 118 }} alt={l.title} src={l.src} />
                   <div>{l.title}</div>
+                  <div>{l.channel}</div>
+                  <div>{l.views}</div>
+                  <div>{l.createdAt}</div>
                 </Grid >
               )
             })
