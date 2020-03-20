@@ -74,7 +74,7 @@ class Details extends Component {
           name="link"
         />
         <br />
-        <Button type="submit">Sumbit</Button>
+        <Button type="submit" color="primary">Sumbit</Button>
         </form>
       </div>
     );

@@ -7,6 +7,7 @@ import PrincipalLog from "./components/Login/PrincipalLog";
 import BlogCategory from "./components/BlogCategory/BlogCategory";
 import AdminGridContainer from "./components/AdminGridContainer/AdminGridContainer";
 import Details from "./components/Details/Details";
+/* import AdminCatalog from "./components/Details/Details"; */
 
 class App extends Component {
   render() {
@@ -19,6 +20,7 @@ class App extends Component {
               <Route path="/category/:id" component={ BlogCategory } />
               <Route path="/admin" component={ PrincipalLog } />
               <Route path="/fillcategory" component={ AdminGridContainer } />
+              {/* <Route path="/admincatalog" component={ AdminCatalog } /> */}
               <Route path="/adminadd/:id" component={ Details } /> 
               <Route exact path="/Chameleon" component={ Gridcontainer } />
           </Switch>

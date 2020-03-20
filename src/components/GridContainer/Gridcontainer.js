@@ -23,8 +23,7 @@ class Gridcontainer extends React.Component {
     const { items } = this.state;
 
     return (
-      
-      <div class="imageContainer">
+      <div className="imageContainer" >
         <Grid
           container={true}
           direction="column"
@@ -45,8 +44,10 @@ class Gridcontainer extends React.Component {
                       <Link to={"/category/" + item.id}>
                         <img src={require(`../../img/${item.src}`)} alt={item.title} class="position" />
                       </Link>
-                      <div class="imageText">
+                      <div className="imageText">
+                      <Link to={"/category/" + item.id}>
                         <p>{item.title}</p>
+                      </Link>
                       </div>
                     </div>
                   </Grid>
@@ -55,6 +56,7 @@ class Gridcontainer extends React.Component {
             }
           </Grid>
         </Grid>
+       
       </div>
     );
   }

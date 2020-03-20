@@ -33,7 +33,7 @@ export default class BlogCategory extends Component {
 
     return (
       <div className="allVideosContainer">
-        <div>
+        <div className="onTop">
         <ReactPlayer
           url={currentVideo ? currentVideo : item.length > 0 && item[0].mp4}
           className="react-player"

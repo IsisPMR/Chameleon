@@ -1,4 +1,4 @@
-import React from "react";
+/* import React from "react";
 import "./AdminGridContainer.css";
 import Grid from "@material-ui/core/Grid";
 import SF from "../../img/SelfDefense.PNG";
@@ -104,6 +104,84 @@ class AdminGridContainer extends React.Component {
       </div>
     );
   }
+}
+
+export default AdminGridContainer; */
+
+import React from "react";
+import { Link } from "react-router-dom";
+import Grid from "@material-ui/core/Grid";
+import data from "../../data.json";
+import "./AdminGridStyle.css";
+import Button from '@material-ui/core/Button';
+
+class AdminGridContainer extends React.Component {
+
+  constructor(props) {
+    super(props)
+  
+    this.state = {
+       items: []
+    }
+  }
+
+  componentDidMount() {
+    this.setState({ items: data.categories })
+  }
+  
+ 
+  render() {
+
+    const { items } = this.state;
+
+    return (
+      <div className="adminImageContainer">
+        <div className="headers">
+            <h1>Welcome admin!!!</h1>
+            <p>You can add or delete more videos here.</p>
+            <Link to={"/adminadd/0"}>
+            <Button type="submit" color="primary">Add Tutorial</Button>
+            </Link>
+            
+        </div>
+        <Grid
+          container={true}
+          direction="column"
+          justify="center"
+          alignItems="center"
+        >
+            <Grid
+              container
+              direction="row"
+              justify="center"
+              alignItems="center"
+            >
+      
+            {
+              items.map(item => {
+                return (
+                  <Grid item={true} xs={3}>
+                    <div class="adminMiniImage">
+                      <Link to={"/category/" + item.id}>
+                        <img src={require(`../../img/${item.src}`)} alt={item.title} class="position" className="adminImage"/>
+                      </Link>
+                      <div className="imageText">
+                      <Link to={"/category/" + item.id}>
+                        <p>{item.title}</p>
+                      </Link>
+                      </div>
+                    </div>
+                  </Grid>
+                )
+              })
+            }
+          </Grid>
+        </Grid>
+       
+      </div>
+    );
+  }
+
 }
 
 export default AdminGridContainer;

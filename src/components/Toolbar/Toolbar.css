@@ -6,13 +6,14 @@
     background: url('../../img/bar/chameleon.jpg');
     height: 63px;
     border-radius: 1%;
+    padding-bottom: 0%;
 }
 
 .toolbar__navigation {
     display: flex;
     height: 100%;
     align-items: center;
-  /*   padding: 1rem; */
+    /*   padding: 1rem; */
 }
 
 .toolbar__logo a {
