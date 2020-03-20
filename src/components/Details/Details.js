@@ -18,21 +18,38 @@ class Details extends Component {
     }
   }
 
+  onChange = (e) => {
+    const { name, value } = e.target;
+    this.setState({
+        [name]: value
+    });
+ }
+
+ submit = (e) => {
+   e.preventDefault();
+   const newEntry = this.state;
+   //
+ }
+
   render() {
+    const { name, category, link } = this.state;
     return (
       <div className="adminContainerForm">
         <h2>Upload a new tutorial</h2>
+        <form onSubmit={this.submit}>
         <TextField
           required
           id="standard-required"
           label="Tutorial Name"
-          defaultValue="Name"
+          value={name}
+          onChange={this.onChange}
+          name="name"
         />
         <br />
         <br />
         <h7>Select a category</h7>
         <br />
-        <Select className="fieldwith">
+        <Select className="fieldwith" value={category} onChange={this.onChange} name="category">
           <MenuItem value="">
             <em>None</em>
           </MenuItem>
@@ -51,11 +68,14 @@ class Details extends Component {
         <TextField
           required
           id="standard-required"
-          label="URL"
+          label="Tutorial Link"
+          value={link}
+          onChange={this.onChange}
+          name="link"
         />
-        <Button /* onClick={Query} */>Validate</Button>
         <br />
-        <Button>Sumbit</Button>
+        <Button type="submit">Sumbit</Button>
+        </form>
       </div>
     );
   }

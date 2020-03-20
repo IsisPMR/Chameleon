@@ -31,12 +31,12 @@ class Gridcontainer extends React.Component {
           justify="center"
           alignItems="center"
         >
-          <Grid
-            container
-            direction="row"
-            justify="center"
-            alignItems="center"
-          >
+            <Grid
+              container
+              direction="row"
+              justify="center"
+              alignItems="center"
+            >
             {
               items.map(item => {
                 return (
