@@ -1,13 +1,9 @@
 .allVideosContainer {
     display: flex;
     flex-direction: column;
-    padding-bottom: 9%;
+    padding-bottom: 11%;
     align-items: center;
     padding-top: 2%;
-}
-
-.miniVideos {
-    align-items: center;
 }
 
 .detailItems {
@@ -17,4 +13,17 @@
 .onTop {
     margin-bottom: 40px;
     margin-top: 20px;
+}
+
+.textStyle {
+    font-size: smaller;
+}
+
+.mainTitle {
+    font-weight: bold;
+}
+
+.redX {
+    height: 10%;
+    width: 10%;
 }
