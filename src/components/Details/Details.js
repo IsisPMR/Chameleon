@@ -4,6 +4,7 @@ import Select from "@material-ui/core/Select";
 import MenuItem from "@material-ui/core/MenuItem";
 import "./Details.css";
 import Button from '@material-ui/core/Button';
+import axios from "axios";
 /* import Query from "./Query"; */
 
 class Details extends Component {
@@ -29,7 +30,11 @@ class Details extends Component {
    e.preventDefault();
    const newEntry = this.state;
    //
+  axios.post("http://localhost:9721/tutorials/create",{params:newEntry})
+  .then(function (response){console.log(response)})
+  .catch(function (err){console.log(err)});
  }
+
 
   render() {
     const { name, category, link } = this.state;
@@ -53,14 +58,14 @@ class Details extends Component {
           <MenuItem value="">
             <em>None</em>
           </MenuItem>
-          <MenuItem value={0}>Self Defense</MenuItem>
-          <MenuItem value={1}>Pets</MenuItem>
-          <MenuItem value={2}>Life Style</MenuItem>
-          <MenuItem value={3}>Hacks</MenuItem>
-          <MenuItem value={4}>Love and Relationships</MenuItem>
-          <MenuItem value={5}>Healthy</MenuItem>
-          <MenuItem value={6}>Music</MenuItem>
-          <MenuItem value={7}>Excersice</MenuItem>
+          <MenuItem value={1}>Self Defense</MenuItem>
+          <MenuItem value={2}>Pets</MenuItem>
+          <MenuItem value={3}>Life Style</MenuItem>
+          <MenuItem value={4}>Hacks</MenuItem>
+          <MenuItem value={5}>Love and Relationships</MenuItem>
+          <MenuItem value={6}>Healthy</MenuItem>
+          <MenuItem value={7}>Music</MenuItem>
+          <MenuItem value={8}>Excersice</MenuItem>
         </Select>
         <br />
         <br />

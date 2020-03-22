@@ -14,8 +14,10 @@ class Gridcontainer extends React.Component {
     }
   }
 
+
   componentDidMount() {
     this.setState({ items: data.categories })
+
   }
   
   render() {
