@@ -17,7 +17,15 @@ class Gridcontainer extends React.Component {
 
   componentDidMount() {
     this.setState({ items: data.categories })
-
+    /* axios
+    .get(`http://localhost:9721/tutorials/main/${id}`)
+    .then(response => {
+        console.log(response.data);
+        this.setState({item:response.data});
+      })
+      .catch(err => {
+        console.log(err);
+      }); */
   }
   
   render() {
