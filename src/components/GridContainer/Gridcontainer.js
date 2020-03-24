@@ -2,7 +2,8 @@ import "./Gridcontainer.css";
 import React from "react";
 import Grid from "@material-ui/core/Grid";
 import { Link } from "react-router-dom";
-import data from "../../data.json"
+/* import data from "../../data.json" */
+import axios from "axios";
 
 class Gridcontainer extends React.Component {
 
@@ -16,16 +17,16 @@ class Gridcontainer extends React.Component {
 
 
   componentDidMount() {
-    this.setState({ items: data.categories })
-    /* axios
-    .get(`http://localhost:9721/tutorials/main/${id}`)
+   /*  this.setState({ items: data.categories }) */
+    axios
+    .get(`http://localhost:9721/tutorials/main`)
     .then(response => {
         console.log(response.data);
-        this.setState({item:response.data});
+        this.setState({items:response.data});
       })
       .catch(err => {
         console.log(err);
-      }); */
+      });
   }
   
   render() {
@@ -51,12 +52,16 @@ class Gridcontainer extends React.Component {
                 return (
                   <Grid item={true} xs={3}>
                     <div class="miniContainer">
-                      <Link to={"/category/" + item.id}>
-                        <img src={require(`../../img/${item.src}`)} alt={item.title} class="position" />
+                      {/* <Link to={"/category/" + item.id}> */}
+                      <Link to={"/category/" + item.category_id}>
+                        {/* <img src={require(`../../img/${item.src}`)} alt={item.title} class="position" /> require built a function to load a module*/}
+                        <img src={`${item.category_image}`} alt={item.category_name} class="position" />
                       </Link>
                       <div className="imageText">
-                      <Link to={"/category/" + item.id}>
-                        <p>{item.title}</p>
+                      {/* <Link to={"/category/" + item.id}> */}
+                      <Link to={"/category/" + item.category_id}>
+                        {/* <p>{item.title}</p> */}
+                        <p>{item.category_name}</p>
                       </Link>
                       </div>
                     </div>
