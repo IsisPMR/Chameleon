@@ -14,7 +14,9 @@ class Details extends Component {
     this.state = {
       name: "",
       category: "",
-      link: ""
+      linkT: "",
+      linkI: "",
+      channel: ""
     };
   }
 
@@ -40,7 +42,7 @@ class Details extends Component {
   };
 
   render() {
-    const { name, category, link } = this.state;
+    const { name, category, linkT, linkI, channel } = this.state;
     return (
       <div className="adminContainerForm">
         <h2>Upload a new tutorial</h2>
@@ -77,15 +79,37 @@ class Details extends Component {
           </Select>
           <br />
           <br />
+          <TextField
+            required
+            id="standard-required"
+            label="Tutorial Channel"
+            value={channel}
+            onChange={this.onChange}
+            name="channel"
+          />
+          <br />
+          <br />
           <p>Copy your URL here:</p>
           <TextField
             required
             id="standard-required"
             label="Tutorial Link"
-            value={link}
+            value={linkT}
             onChange={this.onChange}
-            name="link"
+            name="linkT"
           />
+          <br />
+          <br />
+          <p>You can look for your thumbnail here:&nbsp;<a href="https://unsplash.com/" target="_blank" rel="noopener noreferrer">Unsplash</a></p>
+          <TextField
+            required
+            id="standard-required"
+            label="Image Link"
+            value={linkI}
+            onChange={this.onChange}
+            name="linkI"
+          />
+          <br />
           <br />
           <Button type="submit" color="primary">
             Sumbit
