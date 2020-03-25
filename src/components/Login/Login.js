@@ -39,11 +39,12 @@ const Login = () => {
           <button
             onClick={() => {
               if (username === userInput && password === passwordInput) {
-                console.log("LogIn Successfull");
-                window.localStorage.setItem('user', username);  
+                console.log("LogIn Successfull"); 
                 reDirection.push("/adminadd");
+                window.localStorage.setItem('user', username); 
               } else {
                 console.log("LogIn failed");
+                reDirection.push("/Chameleon");
               }
             }}
           >
