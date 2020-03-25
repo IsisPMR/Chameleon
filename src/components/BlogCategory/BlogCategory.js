@@ -6,7 +6,6 @@ import redDelete from "../../img/icons/delete.png";
 import "./BlogCategory.css";
 import axios from "axios";
 
-
 export default class BlogCategory extends Component {
 
   constructor(props) {
@@ -14,18 +13,23 @@ export default class BlogCategory extends Component {
   
     this.state = {
        item: [],
-       currentVideo: undefined
+       currentVideo: undefined,
+       admin: false
     }
   }
-  
+
+  //const reDirection = useHistory();
+ componentWillMount(){
+    const user = localStorage.getItem('user');
+    if (user){
+      this.setState({admin: true})
+    }
+    //console.log(user);
+  } 
 
   componentDidMount() {
-/*  const id = this.props.match.params.id;
-    const child = data.categories[id].child;
-    this.setState({ item: child }) */
     const id = this.props.match.params.id;
-    /* const child = chameleon.categories[id].tutorials.category_id;
-    this.setState({ item: child })  */
+
     axios
     .get(`http://localhost:9721/tutorials/list/${id}`)
     .then(response => {
@@ -43,12 +47,14 @@ export default class BlogCategory extends Component {
 
   render() {
 
-    const { item, currentVideo } = this.state;
+    const { item, currentVideo, admin } = this.state;
     console.log(item)
 
     return (
       <div className="allVideosContainer">
-        <div><h3>Pulsa la equis para eliminar un video</h3></div>
+        {
+          admin === true ? <h3>Pulsa la equis para eliminar un video</h3> : null 
+        }
         <div className="onTop">
         <ReactPlayer
           url={currentVideo ? currentVideo : item.length > 0 && item[0].tut_mp4}
@@ -62,7 +68,9 @@ export default class BlogCategory extends Component {
 
               return (
                 <Grid  key={index} xs className="detailItems">
-                  <img src={ redDelete } alt={"supr"} className="redX"/>
+                  {
+                    admin === true ? <img src={ redDelete } alt={"supr"} className="redX"/> : null
+                  }
                   <img onClick={() => this.changeImage(l.tut_mp4)} style={{ width: 210, height: 118 }} alt={l.tut_title} src={l.tut_image} />
                   <div className="textStyle">
                   <div className="mainTitle">{l.tut_title}</div>

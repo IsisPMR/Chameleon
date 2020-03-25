@@ -51,11 +51,11 @@ class Gridcontainer extends React.Component {
               items.map(item => {
                 return (
                   <Grid item={true} xs={3}>
-                    <div class="miniContainer">
+                    <div className="miniContainer">
                       {/* <Link to={"/category/" + item.id}> */}
                       <Link to={"/category/" + item.category_id}>
                         {/* <img src={require(`../../img/${item.src}`)} alt={item.title} class="position" /> require built a function to load a module*/}
-                        <img src={`${item.category_image}`} alt={item.category_name} class="position" />
+                        <img src={`${item.category_image}`} alt={item.category_name} className="position" />
                       </Link>
                       <div className="imageText">
                       {/* <Link to={"/category/" + item.id}> */}

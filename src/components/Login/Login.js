@@ -9,6 +9,7 @@ const Login = () => {
   const [userInput, setUser] = React.useState("");
   const [passwordInput, setPassword] = React.useState("");
 
+
   const reDirection = useHistory();
 
   return (
@@ -39,7 +40,8 @@ const Login = () => {
             onClick={() => {
               if (username === userInput && password === passwordInput) {
                 console.log("LogIn Successfull");
-                reDirection.push("/fillcategory");
+                window.localStorage.setItem('user', username);  
+                reDirection.push("/adminadd");
               } else {
                 console.log("LogIn failed");
               }
