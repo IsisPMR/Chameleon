@@ -3,8 +3,8 @@ import TextField from "@material-ui/core/TextField";
 import Select from "@material-ui/core/Select";
 import MenuItem from "@material-ui/core/MenuItem";
 import "./Details.css";
-import Button from "@material-ui/core/Button";
-import Alert from '@material-ui/lab/Alert';
+import Button from '@material-ui/core/Button';
+/* import Alert from '@material-ui/lab/Alert'; */
 import axios from "axios";
 
 class Details extends Component {
@@ -87,6 +87,7 @@ class Details extends Component {
               <MenuItem value={6}>Healthy</MenuItem>
               <MenuItem value={7}>Music</MenuItem>
               <MenuItem value={8}>Excersice</MenuItem>
+              <MenuItem value={9}>Cycling</MenuItem>
             </Select>
             <br />
             <br />
@@ -131,9 +132,8 @@ class Details extends Component {
             />
             <br />
             <br />    {/*  IF <Alert severity="error">This is an error alert — check it out!</Alert> */}
-            <Button variant="contained" color="primary" component="span" onClick={ <Alert severity="success">The video uploaded successfully!</Alert>}>
-              Upload
-            </Button>
+            {/* <Alert severity="success">The video uploaded successfully!</Alert>}> */}
+            <Button type="submit" color="primary">Sumbit</Button>
           </form>
         </div>
       </div>
