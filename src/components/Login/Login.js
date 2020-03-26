@@ -9,14 +9,13 @@ const Login = () => {
   const [userInput, setUser] = React.useState("");
   const [passwordInput, setPassword] = React.useState("");
 
-
   const reDirection = useHistory();
 
   return (
     <>
       <div class="backG">
-        <div class="formTitle">Welcome Admin!</div>
-        <div class="loginForm">
+        <div class="form-title">Welcome Admin!</div>
+        <div class="login-form">
           <div>
             <TextField
               label="Username"

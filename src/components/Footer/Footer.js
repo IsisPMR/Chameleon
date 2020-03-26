@@ -5,7 +5,7 @@ import instagram from "../../img/icons/instagram.png";
 import fb from "../../img/icons/fb.png";
 import twitter from "../../img/icons/twitter.png";
 
-class Footer extends React.Component {
+export default class Footer extends React.Component {
   render() {
     return (
       <div className="footerStyle">
@@ -46,5 +46,3 @@ class Footer extends React.Component {
     );
   }
 }
-
-export default Footer;

@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-/* import data from "../../data.json"; */
 import Grid from "@material-ui/core/Grid";
 import ReactPlayer from "react-player";
 import redDelete from "../../img/icons/delete.png";
 import "./BlogCategory.css";
+import Button from "@material-ui/core/Button";
 import axios from "axios";
 
 export default class BlogCategory extends Component {
@@ -18,13 +18,11 @@ export default class BlogCategory extends Component {
     }
   }
 
-  //const reDirection = useHistory();
  componentWillMount(){
     const user = localStorage.getItem('user');
     if (user){
       this.setState({admin: true})
     }
-    //console.log(user);
   } 
 
   componentDidMount() {
@@ -45,6 +43,12 @@ export default class BlogCategory extends Component {
     this.setState({ currentVideo: id })
   }
 
+  logOutUser = e => {
+    e.preventDefault();
+      localStorage.clear();
+      this.props.history.push('/Chameleon')
+  }
+
   render() {
 
     const { item, currentVideo, admin } = this.state;
@@ -53,7 +57,7 @@ export default class BlogCategory extends Component {
     return (
       <div className="allVideosContainer">
         {
-          admin === true ? <h3>Pulsa la equis para eliminar un video</h3> : null 
+          admin === true ? <h3>Pulsa la equis para eliminar un video</h3> && <Button variant="contained" color="secondary" component="span" onClick={ this.logOutUser }>Logout</Button> : null 
         }
         <div className="onTop">
         <ReactPlayer

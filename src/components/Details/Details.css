@@ -1,8 +1,7 @@
 .adminContainerForm {
     padding-left: 2%;
     padding-right: 2%;
-    padding-bottom: 12%; 
-    padding-top: 5%;
+    padding-bottom: 3%; 
 }
 
 h1 {
@@ -13,6 +12,8 @@ h1 {
     width: 16%;
 }
 
-.logOut {
-    color: green;
+.log-out {
+    padding-right: 2%;
+    padding-top: 2%;
+    text-align: right;
 }

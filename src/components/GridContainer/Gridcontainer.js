@@ -2,27 +2,25 @@ import "./Gridcontainer.css";
 import React from "react";
 import Grid from "@material-ui/core/Grid";
 import { Link } from "react-router-dom";
-/* import data from "../../data.json" */
+import Tooltip from "@material-ui/core/Tooltip";
 import axios from "axios";
 
-class Gridcontainer extends React.Component {
-
-  constructor(props) {
-    super(props)
-  
-    this.state = {
-       items: []
+export default class Gridcontainer extends React.Component {
+    state = {
+      content: false,
+      items: []
     }
-  }
-
 
   componentDidMount() {
-   /*  this.setState({ items: data.categories }) */
+    this.getData();
+  }
+
+  getData() {
     axios
     .get(`http://localhost:9721/tutorials/main`)
     .then(response => {
         console.log(response.data);
-        this.setState({items:response.data});
+        this.setState({items:response.data, content: true});
       })
       .catch(err => {
         console.log(err);
@@ -31,50 +29,25 @@ class Gridcontainer extends React.Component {
   
   render() {
 
-    const { items } = this.state;
+    const { items, content } = this.state;
 
-    return (
+    return (!content) ? null : (
       <div className="imageContainer" >
-        <Grid
-          container={true}
-          direction="column"
-          justify="center"
-          alignItems="center"
-        >
-            <Grid
-              container
-              direction="row"
-              justify="center"
-              alignItems="center"
-            >
+            <Grid container  direction="row" justify="center" alignItems="center">
             {
-              items.map(item => {
-                return (
-                  <Grid item={true} xs={3}>
-                    <div className="miniContainer">
-                      {/* <Link to={"/category/" + item.id}> */}
+              items.map((item, i) => (
+                  <Grid key={`grid-${i}`} item={true} xs={12} md={6} lg={4}>
+                    <Tooltip disableFocusListener title={item.category_name}> 
                       <Link to={"/category/" + item.category_id}>
-                        {/* <img src={require(`../../img/${item.src}`)} alt={item.title} class="position" /> require built a function to load a module*/}
-                        <img src={`${item.category_image}`} alt={item.category_name} className="position" />
+                        <img className="category-image" src={`${item.category_image}`} alt={item.category_name} />
                       </Link>
-                      <div className="imageText">
-                      {/* <Link to={"/category/" + item.id}> */}
-                      <Link to={"/category/" + item.category_id}>
-                        {/* <p>{item.title}</p> */}
-                        <p>{item.category_name}</p>
-                      </Link>
-                      </div>
-                    </div>
+                    </Tooltip>
                   </Grid>
-                )
-              })
+                ))
             }
           </Grid>
-        </Grid>
        
       </div>
     );
   }
 }
-
-export default Gridcontainer;
