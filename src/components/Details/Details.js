@@ -88,11 +88,11 @@ class Details extends Component {
               <MenuItem value={1}>Self Defense</MenuItem>
               <MenuItem value={2}>Pets</MenuItem>
               <MenuItem value={3}>Life Style</MenuItem>
-              <MenuItem value={4}>Hacks</MenuItem>
-              <MenuItem value={5}>Love and Relationships</MenuItem>
+              <MenuItem value={4}>Love and Relationships</MenuItem>
+              <MenuItem value={5}>Hacks</MenuItem>
               <MenuItem value={6}>Healthy</MenuItem>
-              <MenuItem value={7}>Music</MenuItem>
-              <MenuItem value={8}>Excersice</MenuItem>
+              <MenuItem value={7}>Excersice</MenuItem>
+              <MenuItem value={8}>Travels</MenuItem>
               <MenuItem value={9}>Cycling</MenuItem>
             </Select>
             <br />
@@ -138,8 +138,6 @@ class Details extends Component {
             />
             <br />
             <br />{" "}
-            {/*  IF <Alert severity="error">This is an error alert — check it out!</Alert> */}
-            {/* <Alert severity="success">The video uploaded successfully!</Alert>}> */}
             <Button type="submit" color="primary">
               Sumbit
             </Button>
