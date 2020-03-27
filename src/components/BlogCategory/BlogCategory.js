@@ -49,6 +49,19 @@ export default class BlogCategory extends Component {
       this.props.history.push('/Chameleon')
   }
 
+  deleteTut = (id) => {
+    const category_id = this.props.match.params.id;
+    axios
+      .put(`http://localhost:9721/Tutorials/deletevideo/${id}`, { category_id })
+      .then((response) => {
+        console.log(response);
+        this.setState({item:response.data})
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  }
+
   render() {
 
     const { item, currentVideo, admin } = this.state;
@@ -57,7 +70,9 @@ export default class BlogCategory extends Component {
     return (
       <div className="allVideosContainer">
         {
-          admin === true ? <h3>Pulsa la equis para eliminar un video</h3> && <Button variant="contained" color="secondary" component="span" onClick={ this.logOutUser }>Logout</Button> : null 
+          admin === true ? <div> <h3>Pulsa la equis para eliminar un video</h3> 
+          <Button variant="contained" color="secondary" component="span" onClick={ this.logOutUser }>Logout</Button>
+          <Button onClick={ () => this.props.history.push('/adminadd') }>Upload tutorial</Button> </div> : null 
         }
         <div className="onTop">
         <ReactPlayer
@@ -73,7 +88,7 @@ export default class BlogCategory extends Component {
               return (
                 <Grid  key={index} xs className="detailItems">
                   {
-                    admin === true ? <img src={ redDelete } alt={"supr"} className="redX"/> : null
+                    admin === true ? <img src={ redDelete } alt={"supr"} className="redX" onClick={ () => this.deleteTut(l.tut_id) } /> : null
                   }
                   <img onClick={() => this.changeImage(l.tut_mp4)} style={{ width: 210, height: 118 }} alt={l.tut_title} src={l.tut_image} />
                   <div className="textStyle">

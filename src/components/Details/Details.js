@@ -3,7 +3,7 @@ import TextField from "@material-ui/core/TextField";
 import Select from "@material-ui/core/Select";
 import MenuItem from "@material-ui/core/MenuItem";
 import "./Details.css";
-import Button from '@material-ui/core/Button';
+import Button from "@material-ui/core/Button";
 /* import Alert from '@material-ui/lab/Alert'; */
 import axios from "axios";
 
@@ -43,17 +43,23 @@ class Details extends Component {
 
   logOutUser = e => {
     e.preventDefault();
-      localStorage.clear();
-      this.props.history.push('/Chameleon')
-  }
+    localStorage.clear();
+    this.props.history.push("/Chameleon");
+  };
 
   render() {
-    
     const { name, category, linkT, linkI, channel } = this.state;
     return (
       <div>
         <div className="log-out">
-        <Button variant="contained" color="secondary" component="span" onClick={ this.logOutUser }>Logout</Button>   
+          <Button
+            variant="contained"
+            color="secondary"
+            component="span"
+            onClick={this.logOutUser}
+          >
+            Logout
+          </Button>
         </div>
         <div className="adminContainerForm">
           <h2>Upload a new tutorial</h2>
@@ -131,9 +137,12 @@ class Details extends Component {
               name="linkI"
             />
             <br />
-            <br />    {/*  IF <Alert severity="error">This is an error alert — check it out!</Alert> */}
+            <br />{" "}
+            {/*  IF <Alert severity="error">This is an error alert — check it out!</Alert> */}
             {/* <Alert severity="success">The video uploaded successfully!</Alert>}> */}
-            <Button type="submit" color="primary">Sumbit</Button>
+            <Button type="submit" color="primary">
+              Sumbit
+            </Button>
           </form>
         </div>
       </div>
