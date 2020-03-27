@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "8828392f913f5a9e3a358cf70c47ebc4",
+    "revision": "b42abaa6dbf8782dfa43911757a4127c",
     "url": "/Chameleon/index.html"
   },
   {
-    "revision": "05daf72b39cf72379ec3",
-    "url": "/Chameleon/static/css/main.b6046d9b.chunk.css"
+    "revision": "636c5f4db90fc2fe774c",
+    "url": "/Chameleon/static/css/main.47d4a4d7.chunk.css"
   },
   {
-    "revision": "b9415322789a5e3f91f4",
-    "url": "/Chameleon/static/js/2.0e3b2a7a.chunk.js"
+    "revision": "11f9c4dd1a903dbda34a",
+    "url": "/Chameleon/static/js/2.522c45d9.chunk.js"
   },
   {
     "revision": "4214db9a6c23cd334176e62fe82579f5",
-    "url": "/Chameleon/static/js/2.0e3b2a7a.chunk.js.LICENSE.txt"
+    "url": "/Chameleon/static/js/2.522c45d9.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "05daf72b39cf72379ec3",
-    "url": "/Chameleon/static/js/main.2211c825.chunk.js"
+    "revision": "636c5f4db90fc2fe774c",
+    "url": "/Chameleon/static/js/main.ba09de0c.chunk.js"
   },
   {
     "revision": "bd0d75c0aaaaf2e23cd5",
