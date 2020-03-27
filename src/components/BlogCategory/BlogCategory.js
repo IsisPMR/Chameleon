@@ -71,8 +71,8 @@ export default class BlogCategory extends Component {
       <div className="allVideosContainer">
         {
           admin === true ? <div> <h3>Pulsa la equis para eliminar un video</h3> 
-          <Button variant="contained" color="secondary" component="span" onClick={ this.logOutUser }>Logout</Button>
-          <Button onClick={ () => this.props.history.push('/adminadd') }>Upload tutorial</Button> </div> : null 
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<Button variant="contained" color="secondary" component="span" onClick={ this.logOutUser }>Logout</Button>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<Button onClick={ () => this.props.history.push('/adminadd') }>Upload tutorial</Button> </div> : null 
         }
         <div className="onTop">
         <ReactPlayer
